@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: https://ayushgupta.com/sitemap.xml
+Host: https://ayushgupta.com
