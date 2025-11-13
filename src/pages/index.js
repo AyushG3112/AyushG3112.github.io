@@ -7,6 +7,15 @@ const StyledMainContainer = styled.main`
   counter-reset: section;
 `;
 
+export async function getServerSideProps() {
+  return {
+    redirect: {
+      destination: 'https://ayushgupta.me/resume.pdf',
+      permanent: true, // change to true for 301
+    },
+  };
+}
+
 const IndexPage = ({ location }) => (
   <Layout location={location}>
     <StyledMainContainer className="fillHeight">
